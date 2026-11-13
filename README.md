@@ -2,6 +2,11 @@
 
 Adaptation of the LLaDA diffusion language model to Ascend 910B.
 
+## Upstream
+
+- **LLaDA** (original diffusion language model): https://github.com/ML-GSAI/LLaDA
+- **xLLM** (inference framework used for deployment): https://github.com/jd-opensource/xllm
+
 ## Overview
 
 LLaDA generates by iteratively filling masked tokens. This work adapts the model to Ascend via torch_npu, with changes focused on vocabulary projection chunking and masked-position lm_head to reduce memory pressure on long sequences and larger batches.
