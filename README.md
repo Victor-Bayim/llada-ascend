@@ -8,6 +8,8 @@ Diffusion inference for LLaDA-MoE-7B adapted to Ascend 910B. The main change is 
 
 Flags `--logits_chunk`, `--masked_lm_head`, and `--mm_bmm_nd` control the trade-off between kernel-launch overhead and peak memory. `--device cpu` runs the same logic for functional checks without an NPU. Historical latency numbers from a single 910B (batch 1 and 16, lengths up to 2048, 2 diffusion steps) are transcribed in `data/reported-latency.csv`.
 
+The repository also retains four C++ source files from the xLLM project (JD Open Source) under `archive/original/xllm-src/`. These files provide implementation context for earlier C++ experiments with the same model on Ascend; they are not linked or used by the current Python diffusion runners, which rely on Transformers. xLLM itself is an inference framework focused on efficient LLM serving.
+
 ```bash
 # CPU checks
 python tools/validate_cpu.py
@@ -21,4 +23,4 @@ python -m analysis.llada_torch_npu.bench_diffusion \
   --logits_chunk 64 --masked_lm_head --mm_bmm_nd
 ```
 
-Weights and CEval data are not included. Upstream model, sampling method, and frameworks keep their original authorship. The archived C++ xLLM files are context only and are not used by the Python runners.
+Weights and CEval data are not included. Upstream model, sampling method, and frameworks keep their original authorship.
