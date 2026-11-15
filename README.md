@@ -1,5 +1,3 @@
-**English** | [简体中文](README.zh-CN.md)
-
 # LLaDA-MoE-7B on Ascend 910B
 
 [LLaDA](https://github.com/ML-GSAI/LLaDA) (LLaDA-MoE-7B-A1B-Instruct) running on Huawei Ascend 910B through [xLLM](https://github.com/jd-opensource/xllm).
