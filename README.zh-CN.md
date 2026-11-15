@@ -24,5 +24,3 @@ python -m analysis.llada_torch_npu.bench_diffusion \
   --batch_size 16 --prompt_len 2048 --gen_length 2048 \
   --logits_chunk 64 --masked_lm_head --mm_bmm_nd
 ```
-
-模型权重和 CEval 数据未打包。上游模型和采样方法保留原始作者归属；xLLM 提供推理框架上下文。
