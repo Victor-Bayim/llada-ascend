@@ -1,3 +1,5 @@
+**English** | [简体中文](README.zh-CN.md)
+
 # Runnable diffusion path
 
 - `llada_torch_npu/ceval_diffusion.py`: shared maintained sampler and CEval evaluator.

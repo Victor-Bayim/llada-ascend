@@ -1,3 +1,5 @@
+**English** | [简体中文](README.zh-CN.md)
+
 # LLaDA-MoE on Ascend: diffusion inference and memory-path experiments
 
 This repository contains the actual Python diffusion implementation, CPU regressions,

@@ -1,3 +1,5 @@
+**English** | [简体中文](NOTICE.zh-CN.md)
+
 # Attribution
 
 Original source comments and copyright notices are preserved. The diffusion sampler follows the LLaDA model's published sampling approach; xLLM context files retain their upstream attribution. Victor's project work concerns platform adaptation and execution/memory handling.
