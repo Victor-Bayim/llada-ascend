@@ -2,22 +2,27 @@
 
 # LLaDA-MoE-7B on Ascend 910B: Memory-Path Optimized Diffusion Inference
 
-Independent adaptation of LLaDA-MoE-7B diffusion inference to Huawei Ascend 910B. Vocabulary chunking and masked lm_head eliminate full token×vocabulary materialization, enabling longer sequences and larger batches under tight memory constraints.
+Independent adaptation of LLaDA-MoE-7B diffusion inference to Huawei Ascend 910B. Vocabulary chunking and a masked lm_head eliminate full token×vocabulary materialization, enabling longer sequences and larger batches under tight NPU memory constraints.
 
-## Engineering Highlights
+## What Was Implemented
 
-- Vocabulary-chunked projection with exact cross-chunk argmax and confidence
-- Masked lm_head that gathers only active hidden states before the final projection
-- Vectorized transfer selection and tensor updates
-- Complete CPU regression suite plus synchronized NPU benchmark harness
-- Controlled quality smoke test (CEval subset, macro accuracy 0.7)
+The core engineering addresses the memory bottleneck of diffusion-language-model inference:
 
-## Supported Workloads
+- Vocabulary-chunked projection that computes logits in tiles while still producing exact cross-chunk argmax and confidence scores.
+- Masked lm_head that gathers only the active (masked) hidden states before the final output projection, avoiding allocation of the full sequence×vocabulary tensor.
+- Vectorized transfer selection and in-place tensor updates for the diffusion sampling loop.
+- A complete CPU regression suite that validates full, chunked, and masked projection paths, block masks, zero masks, and heterogeneous top-k behavior.
+- A synchronized NPU benchmark harness that records per-run timings with explicit device checks and metadata.
+- A controlled quality smoke test on a CEval subset (macro accuracy 0.7 under the reported settings).
 
-- Batch sizes 1 and 16, prompt lengths up to 2048
-- Explicit device synchronization for accurate timing
-- Flag-controlled trade-offs (`--logits_chunk`, `--masked_lm_head`, `--mm_bmm_nd`)
-- Full CPU validation path (no NPU required for functional checks)
+Flag-controlled options (`--logits_chunk`, `--masked_lm_head`, `--mm_bmm_nd`) allow trading kernel-launch overhead for lower peak memory.
+
+## Supported Workloads & Results
+
+- Batch sizes 1 and 16, prompt / generation lengths up to 2048.
+- Explicit device synchronization for accurate latency measurement.
+- Full CPU validation path (no NPU required for functional checks).
+- Historical latency numbers (transcribed from the technical report) are preserved in `data/reported-latency.csv` for the single-device Ascend 910B runs.
 
 ## Quick Start
 
