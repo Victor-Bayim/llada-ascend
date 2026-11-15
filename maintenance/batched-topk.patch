@@ -1,0 +1,11 @@
+--- archive/original/analysis/llada_torch_npu/ceval_diffusion.py
++++ analysis/llada_torch_npu/ceval_diffusion.py
+@@ -172,7 +172,7 @@
+         max_k = int(num_transfer_tokens[:, step_idx].max().item())
+         if max_k <= 0:
+             return transfer_index
+-        _, topk_idx = torch.topk(confidence, k=max_k, dim=-1, sorted=False)
++        _, topk_idx = torch.topk(confidence, k=max_k, dim=-1, sorted=True)
+         ranks = torch.arange(max_k, device=device).unsqueeze(0)
+         valid = ranks < num_transfer_tokens[:, step_idx].unsqueeze(1)
+         transfer_index.scatter_(1, topk_idx, valid)

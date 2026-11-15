@@ -1,6 +1,15 @@
 __pycache__/
 *.pyc
 *.log
-datasets/
+/datasets/
 *.bin
 *.pt
+*.safetensors
+/models/
+/weights/
+/logs/
+/results/
+.env
+.env.*
+.venv/
+.pytest_cache/

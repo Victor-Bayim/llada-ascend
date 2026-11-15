@@ -1,0 +1,25 @@
+{
+  "checked_at": "2026-11-15T12:06:25.934264+00:00",
+  "platform": "Windows AMD64",
+  "python": "3.12.14",
+  "torch": "2.15.0+cpu",
+  "pytest": "9.2.0",
+  "legacy_checks_passed": 39,
+  "maintenance_pytest_cases_passed": 143,
+  "archived_source_hashes_checked": 13,
+  "reported_rows_checked": 14,
+  "cli_help_entry_points_checked": [
+    "bench_diffusion",
+    "ceval_diffusion",
+    "ceval_diffusion_subset",
+    "llada_diffusion_cli"
+  ],
+  "real_missing_extension_guard": "PASS: absent torch_npu exits before HF imports/model loading",
+  "optional_numpy_available": false,
+  "scope": "CPU synthetic functional, historical source integrity and report-table checks only",
+  "npu_benchmark_rerun": false,
+  "model_weights_loaded": false,
+  "ceval_quality_rerun": false,
+  "xllm_cpp_built_or_run": false,
+  "historical_accelerator_environment_recovered": false
+}

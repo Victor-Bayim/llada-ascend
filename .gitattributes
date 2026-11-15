@@ -1,0 +1,8 @@
+*.py text eol=lf
+*.sh text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.csv text eol=lf
+*.patch text eol=lf
+# Preserve the evidence bytes so SOURCE-MANIFEST hashes survive Windows/Linux clones.
+archive/original/** -text

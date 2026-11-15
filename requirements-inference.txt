@@ -1,0 +1,6 @@
+# Direct runner imports, NOT a recovered/validated historical environment lock.
+# Install matching Ascend torch + torch_npu + CANN/driver before this file.
+# Model custom-code/tokenizer dependencies may impose further requirements.
+transformers
+datasets
+numpy

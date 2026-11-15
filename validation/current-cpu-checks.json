@@ -1,0 +1,322 @@
+{
+  "checked_at": "2026-11-15T12:06:10.923379+00:00",
+  "platform": "Windows AMD64",
+  "torch": "2.15.0+cpu",
+  "scope": "CPU functional checks; no NPU latency or model-quality remeasurement",
+  "passed_checks": 39,
+  "checks": [
+    {
+      "check": "chunked logits vs full projection",
+      "seed": 7,
+      "bias": false,
+      "chunk": 1,
+      "masked": false,
+      "passed": true
+    },
+    {
+      "check": "chunked logits vs full projection",
+      "seed": 7,
+      "bias": false,
+      "chunk": 1,
+      "masked": true,
+      "passed": true
+    },
+    {
+      "check": "chunked logits vs full projection",
+      "seed": 7,
+      "bias": false,
+      "chunk": 8,
+      "masked": false,
+      "passed": true
+    },
+    {
+      "check": "chunked logits vs full projection",
+      "seed": 7,
+      "bias": false,
+      "chunk": 8,
+      "masked": true,
+      "passed": true
+    },
+    {
+      "check": "chunked logits vs full projection",
+      "seed": 7,
+      "bias": false,
+      "chunk": 37,
+      "masked": false,
+      "passed": true
+    },
+    {
+      "check": "chunked logits vs full projection",
+      "seed": 7,
+      "bias": false,
+      "chunk": 37,
+      "masked": true,
+      "passed": true
+    },
+    {
+      "check": "chunked logits vs full projection",
+      "seed": 7,
+      "bias": true,
+      "chunk": 1,
+      "masked": false,
+      "passed": true
+    },
+    {
+      "check": "chunked logits vs full projection",
+      "seed": 7,
+      "bias": true,
+      "chunk": 1,
+      "masked": true,
+      "passed": true
+    },
+    {
+      "check": "chunked logits vs full projection",
+      "seed": 7,
+      "bias": true,
+      "chunk": 8,
+      "masked": false,
+      "passed": true
+    },
+    {
+      "check": "chunked logits vs full projection",
+      "seed": 7,
+      "bias": true,
+      "chunk": 8,
+      "masked": true,
+      "passed": true
+    },
+    {
+      "check": "chunked logits vs full projection",
+      "seed": 7,
+      "bias": true,
+      "chunk": 37,
+      "masked": false,
+      "passed": true
+    },
+    {
+      "check": "chunked logits vs full projection",
+      "seed": 7,
+      "bias": true,
+      "chunk": 37,
+      "masked": true,
+      "passed": true
+    },
+    {
+      "check": "chunked logits vs full projection",
+      "seed": 19,
+      "bias": false,
+      "chunk": 1,
+      "masked": false,
+      "passed": true
+    },
+    {
+      "check": "chunked logits vs full projection",
+      "seed": 19,
+      "bias": false,
+      "chunk": 1,
+      "masked": true,
+      "passed": true
+    },
+    {
+      "check": "chunked logits vs full projection",
+      "seed": 19,
+      "bias": false,
+      "chunk": 8,
+      "masked": false,
+      "passed": true
+    },
+    {
+      "check": "chunked logits vs full projection",
+      "seed": 19,
+      "bias": false,
+      "chunk": 8,
+      "masked": true,
+      "passed": true
+    },
+    {
+      "check": "chunked logits vs full projection",
+      "seed": 19,
+      "bias": false,
+      "chunk": 37,
+      "masked": false,
+      "passed": true
+    },
+    {
+      "check": "chunked logits vs full projection",
+      "seed": 19,
+      "bias": false,
+      "chunk": 37,
+      "masked": true,
+      "passed": true
+    },
+    {
+      "check": "chunked logits vs full projection",
+      "seed": 19,
+      "bias": true,
+      "chunk": 1,
+      "masked": false,
+      "passed": true
+    },
+    {
+      "check": "chunked logits vs full projection",
+      "seed": 19,
+      "bias": true,
+      "chunk": 1,
+      "masked": true,
+      "passed": true
+    },
+    {
+      "check": "chunked logits vs full projection",
+      "seed": 19,
+      "bias": true,
+      "chunk": 8,
+      "masked": false,
+      "passed": true
+    },
+    {
+      "check": "chunked logits vs full projection",
+      "seed": 19,
+      "bias": true,
+      "chunk": 8,
+      "masked": true,
+      "passed": true
+    },
+    {
+      "check": "chunked logits vs full projection",
+      "seed": 19,
+      "bias": true,
+      "chunk": 37,
+      "masked": false,
+      "passed": true
+    },
+    {
+      "check": "chunked logits vs full projection",
+      "seed": 19,
+      "bias": true,
+      "chunk": 37,
+      "masked": true,
+      "passed": true
+    },
+    {
+      "check": "chunked logits vs full projection",
+      "seed": 41,
+      "bias": false,
+      "chunk": 1,
+      "masked": false,
+      "passed": true
+    },
+    {
+      "check": "chunked logits vs full projection",
+      "seed": 41,
+      "bias": false,
+      "chunk": 1,
+      "masked": true,
+      "passed": true
+    },
+    {
+      "check": "chunked logits vs full projection",
+      "seed": 41,
+      "bias": false,
+      "chunk": 8,
+      "masked": false,
+      "passed": true
+    },
+    {
+      "check": "chunked logits vs full projection",
+      "seed": 41,
+      "bias": false,
+      "chunk": 8,
+      "masked": true,
+      "passed": true
+    },
+    {
+      "check": "chunked logits vs full projection",
+      "seed": 41,
+      "bias": false,
+      "chunk": 37,
+      "masked": false,
+      "passed": true
+    },
+    {
+      "check": "chunked logits vs full projection",
+      "seed": 41,
+      "bias": false,
+      "chunk": 37,
+      "masked": true,
+      "passed": true
+    },
+    {
+      "check": "chunked logits vs full projection",
+      "seed": 41,
+      "bias": true,
+      "chunk": 1,
+      "masked": false,
+      "passed": true
+    },
+    {
+      "check": "chunked logits vs full projection",
+      "seed": 41,
+      "bias": true,
+      "chunk": 1,
+      "masked": true,
+      "passed": true
+    },
+    {
+      "check": "chunked logits vs full projection",
+      "seed": 41,
+      "bias": true,
+      "chunk": 8,
+      "masked": false,
+      "passed": true
+    },
+    {
+      "check": "chunked logits vs full projection",
+      "seed": 41,
+      "bias": true,
+      "chunk": 8,
+      "masked": true,
+      "passed": true
+    },
+    {
+      "check": "chunked logits vs full projection",
+      "seed": 41,
+      "bias": true,
+      "chunk": 37,
+      "masked": false,
+      "passed": true
+    },
+    {
+      "check": "chunked logits vs full projection",
+      "seed": 41,
+      "bias": true,
+      "chunk": 37,
+      "masked": true,
+      "passed": true
+    },
+    {
+      "check": "transfer schedule preserves mask counts",
+      "passed": true
+    },
+    {
+      "check": "maintenance patch: batched top-k matches row loop for 100 seeds",
+      "passed": true
+    },
+    {
+      "check": "14 report rows and original source hashes",
+      "passed": true
+    }
+  ],
+  "original_issue": {
+    "description": "unsorted batched top-k can select wrong smaller-k subset",
+    "counterexample": {
+      "seed": 0,
+      "k": [
+        100,
+        7,
+        0
+      ]
+    },
+    "status": "archive preserved; maintained entry point includes sorted top-k fix"
+  },
+  "npu_benchmark_rerun": false
+}

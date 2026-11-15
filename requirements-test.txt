@@ -1,0 +1,3 @@
+# Install a platform-appropriate CPU torch wheel first (see README).
+torch>=2.5.1
+pytest>=8

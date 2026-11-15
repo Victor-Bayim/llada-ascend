@@ -1,0 +1,72 @@
+{
+  "archive_sha256": "2d3a26423d3d75f59ab161101214a8d46d000f1cedd8375b3a59c78e6720d373",
+  "files": [
+    {
+      "path": "archive/original/analysis/final_report/run_ceval_subset.sh",
+      "sha256": "db30368f56a38cb4274b49415b64ba9921e5c7af537e6a22fbc23bd307661a3e",
+      "origin": "competition source snapshot"
+    },
+    {
+      "path": "archive/original/analysis/final_report/run_perf.sh",
+      "sha256": "eac0bc15174531529de23a807edab05c13637b78a7db960df567f84c1f6b9308",
+      "origin": "competition source snapshot"
+    },
+    {
+      "path": "archive/original/analysis/llada_torch_npu/bench_diffusion.py",
+      "sha256": "fa2aeba1c822dddef739a73ad94c5d01882e7d7c83792a387d99a265fbebfcb4",
+      "origin": "competition source snapshot"
+    },
+    {
+      "path": "archive/original/analysis/llada_torch_npu/ceval_diffusion.py",
+      "sha256": "8428b53eaf37362cd6eb4aa174222c8491b7b447fc9ddf785ca90abbbaf2b586",
+      "origin": "competition source snapshot"
+    },
+    {
+      "path": "archive/original/analysis/llada_torch_npu/ceval_diffusion_subset.py",
+      "sha256": "63f1b05455f0571b5f4a7f076754c0b23315b448a4a627d712bb990c0c76e15f",
+      "origin": "competition source snapshot"
+    },
+    {
+      "path": "archive/original/analysis/llada_torch_npu/ceval_eval.py",
+      "sha256": "4a00d02c9b8f387b1d475ab21fd9642c2be4eeb395242e6e127725dc4650dea3",
+      "origin": "competition source snapshot"
+    },
+    {
+      "path": "archive/original/analysis/llada_torch_npu/llada_diffusion_cli.py",
+      "sha256": "03cd80300c8ec41dc84cd1b3fb1c140755253ce06873fdb717df8d2853f6b110",
+      "origin": "competition source snapshot"
+    },
+    {
+      "path": "archive/original/analysis/llada_torch_npu/__init__.py",
+      "sha256": "56897918523efbb836ef154aee3d2467228bfcb4cba578932859a10322df39c7",
+      "origin": "competition source snapshot"
+    },
+    {
+      "path": "archive/original/analysis/__init__.py",
+      "sha256": "36543f1ee460a3bec5a38fbfcc79ab49111c1e7a6dac6460fd128d4b6ac5a197",
+      "origin": "competition source snapshot"
+    },
+    {
+      "path": "archive/original/xllm-src/xllm/core/distributed_runtime/dist_manager.cpp",
+      "sha256": "cb80ae3a38b9d844ad3d863e3e0ca69de3c691aaedfbb9cc8e26eaa36b5cfdb7",
+      "origin": "competition source snapshot"
+    },
+    {
+      "path": "archive/original/xllm-src/xllm/core/layers/fallback/fused_moe.cpp",
+      "sha256": "f2c93c32ec02eb9a7855e26a109663242082ba6984d5d7a72a9a4b0659c267f7",
+      "origin": "competition source snapshot"
+    },
+    {
+      "path": "archive/original/xllm-src/xllm/models/llm/llada_moe.h",
+      "sha256": "151723e1ff479ded810cd9375f817ce1c7f2316842bb8105d25ef2d589988c36",
+      "origin": "competition source snapshot"
+    },
+    {
+      "path": "archive/original/xllm-src/xllm/models/llm/qwen3_moe.h",
+      "sha256": "36d5fed5a9c05056a25041b3a087eabcbf9755eef98727bed782967f70663084",
+      "origin": "competition source snapshot"
+    }
+  ],
+  "scope": "Unmodified competition source snapshots; hashes do not assert successful inference or performance.",
+  "upstream_base_commit": null
+}

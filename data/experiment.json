@@ -1,0 +1,19 @@
+{
+  "device": "single Ascend 910B",
+  "project_platform": "8 x Ascend 910B",
+  "runtime": "torch_npu + Transformers in xLLM v0.7.1 container",
+  "input": "repeated BOS tokens",
+  "timing": "generation only; model loading excluded",
+  "steps": 2,
+  "temperature": 0,
+  "threshold": 0.95,
+  "quality_check": {
+    "dataset": "CEval first 5 subjects, first 2 questions each",
+    "questions": 10,
+    "macro_accuracy": 0.7,
+    "steps": 24,
+    "temperature": 0.7,
+    "relationship": "separate decoding configuration, not the latency configuration"
+  },
+  "data_type": "report-transcribed historical latency, not raw timing logs"
+}

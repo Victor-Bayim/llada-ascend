@@ -1,0 +1,15 @@
+batch,input_tokens,output_tokens,steps,warmup,iterations,latency_seconds,source_type
+1,32,32,2,1,1,1.3483,technical-report transcription
+16,32,32,2,1,1,1.4434,technical-report transcription
+1,64,64,2,1,1,1.3302,technical-report transcription
+16,64,64,2,1,1,1.7862,technical-report transcription
+1,128,128,2,1,1,1.3634,technical-report transcription
+16,128,128,2,1,1,2.3546,technical-report transcription
+1,256,256,2,1,1,1.4450,technical-report transcription
+16,256,256,2,1,1,3.4321,technical-report transcription
+1,512,512,2,1,1,1.5087,technical-report transcription
+16,512,512,2,1,1,6.4769,technical-report transcription
+1,1024,1024,2,1,1,1.8602,technical-report transcription
+16,1024,1024,2,1,1,15.1781,technical-report transcription
+1,2048,2048,2,1,1,2.3713,technical-report transcription
+16,2048,2048,2,1,1,32.2139,technical-report transcription
