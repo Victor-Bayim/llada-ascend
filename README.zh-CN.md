@@ -8,6 +8,8 @@
 
 标志 `--logits_chunk`、`--masked_lm_head` 和 `--mm_bmm_nd` 控制内核启动开销与峰值内存之间的权衡。`--device cpu` 可在无 NPU 情况下跑同一套逻辑做功能检查。单卡 910B 上的历史延迟数据（batch 1 和 16，长度最高 2048，2 步扩散）转录在 `data/reported-latency.csv`。
 
+仓库在 `archive/original/xllm-src/` 下保留了来自 xLLM 项目（京东开源）的四份 C++ 源文件。这些文件为早期在昇腾上用同一模型进行的 C++ 实验提供实现上下文；它们不被当前的 Python 扩散推理入口链接或使用，当前入口依赖 Transformers。xLLM 本身是一个侧重高效 LLM 服务的推理框架。
+
 ```bash
 # CPU 检查
 python tools/validate_cpu.py
@@ -21,4 +23,4 @@ python -m analysis.llada_torch_npu.bench_diffusion \
   --logits_chunk 64 --masked_lm_head --mm_bmm_nd
 ```
 
-权重和 CEval 数据未包含。上游模型、采样方法和框架保留原始作者归属。归档的 C++ xLLM 文件仅作上下文参考，不被 Python 运行入口使用。
+权重和 CEval 数据未包含。上游模型、采样方法和框架保留原始作者归属。
